@@ -12,6 +12,35 @@
 </head>
 <body>
     
+    <main class="main" id="app">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center py-5">
+                Score: 0
+            </div>
+            <div class="row align-items-center justify-content-center pb-5">
+                {{ currentLetterPressed }}
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div v-for="(letter, index) in keyboardTop" :class="['col-auto', 'keyboard', 'keyboard-top']">
+                    {{ letter }}
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div v-for="(letter, index) in keyboardMiddle" class="col-auto keyboard keyboard-middle">
+                    {{ letter }}
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div v-for="(letter, index) in keyboardBottom" class="col-auto keyboard keyboard-bottom">
+                    {{ letter }}
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 
     <script src="./js/app.js"></script>

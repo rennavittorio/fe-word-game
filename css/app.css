@@ -1,0 +1,18 @@
+body {
+    background-color: #333;
+    color: #eee;
+}
+
+.keyboard {
+    aspect-ratio: 1;
+    width: 50px;
+    border: 1px solid #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard.active {
+    background-color: lightgreen;
+}
